@@ -71,30 +71,30 @@ Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Pyth
 
 United Airlines faces a customer satisfaction crisis: with an average rating of 2.0/5 and only 18% of customers recommending the airline, reviews highlight persistent dissatisfaction. Feedback is dominated by Economy leisure travelers, who consistently cite seat comfort, WiFi, and food as the weakest points. Premium passengers, though fewer, are highly sensitive to comfort and dining quality.
 
-## 5. Key Learnings
+## 6. Key Learnings
 
-5.1. Technical Skills
+6.1. Technical Skills
 - Writing Snowflake SQL: Developed efficient queries for data extraction, cleaning, and creating reproducible data pipelines.
 - Building Mode Studio Reports: Created interactive dashboards with dynamic filters and drill-downs for routes, aircraft, and customer profiles.
 - Python (Pandas, Seaborn): Used Pandas for exploratory data analysis and preprocessing; applied Seaborn for creating trend plots and correlation heatmaps across satisfaction factors.
 
-5.2. Analytical Skills
+6.2. Analytical Skills
 - Segment-first approach: By separating Economy vs Non-Economy cabins, different satisfaction drivers became clear.
 Economy: Seat Comfort, WiFi, and Food quality were the weakest factors.
 Non-Economy: Seat Comfort and Food were critical; small issues had a disproportionate impact on overall satisfaction.
 - Correlation analysis: Learned to interpret satisfaction drivers carefully. For example, while food quality and staff service often correlate, correlation does not mean improving one automatically improves the other.
 
-5.3. Communication
+6.3. Communication
 - Storytelling with data: Organized the dashboard into a logical flow (Overview → Trends → Satisfaction Breakdown → Customer Profiles → Aircraft & Routes → Drivers).
 - Actionable framing: Translated metrics into improvement levers (e.g., upgrade WiFi, improve food menus, train staff for consistency, prioritize seat comfort on long-haul routes)
 
-## 6. Limitations
+## 7. Limitations
 - Single-airline scope: Analysis is limited to United Airlines without competitor benchmarks.
 - Unobserved variables: No data on fare class, flight delays, aircraft age/configuration, or load factors.
 - Correlation-only insights: Findings reflect associations, not causality; factors may be confounded by route length or season.
 - Verified vs unverified weighting: Dataset treats both equally; potential bias from unverifiable reviews remains unexplored.
 
-## 7. Next steps
+## 8. Next steps
 - Benchmarking: Compare United with peers like Delta, American, or Emirates for context.
 - Text Analysis: Use NLP to analyze review text for recurring themes (delays, service attitude, comfort complaints).
 - Modeling: Apply regression or machine learning to quantify the impact of individual factors on recommendation likelihood.
