@@ -29,16 +29,25 @@ Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Pyth
 - Loaded 4,458 reviews from Skytrax database, using SQL for data querying.
 - Validated schema (data types, null handling, consistency checks).
 
-2.2. Cleaning
+2.2 Dimension Table
+
+| Table         | Purpose                                           |
+|---------------|---------------------------------------------------|
+| `dim_customer` | Passenger information                            |
+| `dim_aircraft` | Aircraft attributes                              |
+| `dim_location` | Maps airports/cities for origin, destination, and transit |
+| `dim_date`     | Calendar hierarchy for submission and flight dates     |
+
+2.3. Cleaning
 - Standardized countries, cities, routes, aircraft names, and cabin/seat types.
 - Addressed missing or out-of-range values to ensure reliability.
 
-2.3. Feature Preparation
+2.4. Feature Preparation
 - Flags for verified vs unverified reviews.
 - Flags for Economy vs Non-Economy cabins.
 - Route structure prepared (Origin – Destination – Transit).
 
-2.4. Modeling/Analysis
+2.5. Modeling/Analysis
 - Correlation analysis of seven satisfaction factors (seat, staff, food, ground, entertainment, WiFi, value for money).
 - Separate correlation matrices for Economy vs Non-Economy.
 - Trend analysis for ratings and recommendations over time.
