@@ -1,0 +1,16 @@
+import pandas as pd # Load Pandas for data manipulation
+import seaborn as sns # Seaborn for statistical plots
+import matplotlib.pyplot as plt # Matplotlib for plotting
+
+# Load cleaned Skytrax reviews dataset (exported from SQL)
+df = pd.read_csv("united_reviews.csv")
+
+# Create a boxplot to visualize distribution of ratings by seat type
+sns.boxplot(x="SEAT_TYPE", y="AVERAGE_RATING", data=df)
+
+# Add a title for clarity
+plt.title("Rating Distribution by Seat Type")
+
+# Show the plot
+plt.show()
+
