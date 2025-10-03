@@ -1,6 +1,6 @@
 # Skytrax United Airlines Analysis
 ![](https://github.com/jennytran874-gif/skytrax_united_airlines_/issues/1#issue-3479870014)
-Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Python (Pandas, Seaborn), and Mode Studio for dashboarding. The analysis reveals persistent dissatisfaction, especially among Economy leisure travelers, with seat comfort, WiFi, and food emerging as universal weaknesses. Insights highlight where targeted improvements could most effectively raise customer satisfaction and loyalty.
+Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Python (Pandas, Seaborn, Statsmodels), and Mode Studio for dashboarding. The analysis reveals persistent dissatisfaction, especially among Economy leisure travelers, with seat comfort, WiFi, and food emerging as universal weaknesses. Insights highlight where targeted improvements could most effectively raise customer satisfaction and loyalty.
 
 ## 1. Overview
 
@@ -50,6 +50,7 @@ Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Pyth
 2.5. Modeling/Analysis
 - Correlation analysis of seven satisfaction factors (seat, staff, food, ground, entertainment, WiFi, value for money).
 - Separate correlation matrices for Economy vs Non-Economy.
+- ANOVA to test differences across cabin types.
 - Trend analysis for ratings and recommendations over time.
 
 ## 3. Insights
@@ -57,7 +58,8 @@ Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Pyth
 3.1. Economy Class
 - Top pain points: Seat Comfort (2.2/5), WiFi (1.9/5), Food (2.1/5).
 - Cabin Staff is relatively stronger, but not enough to offset weak product ratings.
-- Correlation: Food and Staff Service ratings move together: when food is rated poorly, staff is also perceived less favorably.
+- Cabin Staff stronger, but insufficient to offset weak product ratings.
+- Correlation: Poor Food ratings often coincide with lower Staff ratings.
 
 3.2. Non-Economy Classes (Business, Premium, First)
 - Critical factors: Seat Comfort and Food quality drive overall satisfaction.
@@ -86,6 +88,7 @@ United Airlines faces a customer satisfaction crisis: with an average rating of 
 - Writing Snowflake SQL: Developed efficient queries for data extraction, cleaning, and creating reproducible data pipelines.
 - Building Mode Studio Reports: Created interactive dashboards with dynamic filters and drill-downs for routes, aircraft, and customer profiles.
 - Python (Pandas, Seaborn): Used Pandas for exploratory data analysis and preprocessing; applied Seaborn for creating trend plots and correlation heatmaps across satisfaction factors.
+- Python (Statsmodels): Applied ANOVA to statistically test whether differences in seat comfort across cabin classes were significant.
 
 6.2. Analytical Skills
 - Segment-first approach: By separating Economy vs Non-Economy cabins, different satisfaction drivers became clear.
