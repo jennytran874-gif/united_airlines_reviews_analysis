@@ -29,7 +29,7 @@ Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Pyth
 - Loaded 4,458 reviews from Skytrax database, using SQL for data querying.
 - Validated schema (data types, null handling, consistency checks).
 
-2.2 Dimension Table
+2.2. Dimension Table
 
 | Table         | Purpose                                           |
 |---------------|---------------------------------------------------|
