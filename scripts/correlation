@@ -33,9 +33,8 @@ sns.heatmap(eco_corr, annot=True, cmap='coolwarm', fmt='.2f', cbar=True)
 plt.title("Correlation Heatmap - Economy Class")
 plt.show()
 
-
-# Create heatmap for Economy Class
+# Create heatmap for Non-Economy Class
 plt.figure(figsize=(5, 5))
 sns.heatmap(non_eco_corr, annot=True, cmap='coolwarm', fmt='.2f', cbar=True)
-plt.title("Correlation Heatmap - Non Economy Class")
+plt.title("Correlation Heatmap - Non-Economy Class")
 plt.show()
