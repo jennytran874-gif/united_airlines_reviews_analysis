@@ -1,5 +1,6 @@
 # Skytrax United Airlines Analysis
-![]()
+<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/704cb1d6-077a-407a-99db-1693f5982ae1" />
+
 Analyzed 4,458 United Airlines reviews (2015–2025) using SQL (Snowflake), Python (Pandas, Seaborn, Statsmodels), and Mode Studio for dashboarding. The analysis reveals persistent dissatisfaction, especially among Economy leisure travelers, with seat comfort, WiFi, and food emerging as universal weaknesses. Insights highlight where targeted improvements could most effectively raise customer satisfaction and loyalty.
 
 ## 1. Overview
